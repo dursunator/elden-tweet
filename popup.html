@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-section">
+        <div class="logo-icon">⚔️</div>
+        <div class="title-section">
+          <h1>ELDEN TWEET</h1>
+          <span class="author">by dursunator</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Settings Grid -->
+    <div class="settings-grid">
+
+      <!-- Sound Setting -->
+      <div class="setting-card">
+        <div class="setting-header">
+          <div class="setting-icon">🔊</div>
+          <div class="setting-info">
+            <div class="setting-title">Sound Effect</div>
+            <div class="setting-description">Epic Elden Ring sound</div>
+          </div>
+        </div>
+        <label class="toggle">
+          <input type="checkbox" id="soundToggle">
+          <span class="toggle-slider"></span>
+        </label>
+      </div>
+
+      <!-- Duration Setting -->
+      <div class="setting-card">
+        <div class="setting-header">
+          <div class="setting-icon">⏱️</div>
+          <div class="setting-info">
+            <div class="setting-title">Display Duration</div>
+            <div class="setting-description"><span id="durationValue">3</span> seconds</div>
+          </div>
+        </div>
+        <input type="range" id="durationSlider" min="1" max="10" value="3" step="1" class="slider">
+      </div>
+
+      <!-- Color Setting -->
+      <div class="setting-card full-width">
+        <div class="setting-header">
+          <div class="setting-icon">🎨</div>
+          <div class="setting-info">
+            <div class="setting-title">Banner Theme</div>
+            <div class="setting-description">Choose your style</div>
+          </div>
+        </div>
+        <div class="color-grid">
+          <div class="color-card" data-color="yellow">
+            <div class="color-preview gold"></div>
+            <span class="color-name">Gold</span>
+            <div class="color-check">✓</div>
+          </div>
+          <div class="color-card" data-color="red">
+            <div class="color-preview red"></div>
+            <span class="color-name">Crimson</span>
+            <div class="color-check">✓</div>
+          </div>
+          <div class="color-card" data-color="blue">
+            <div class="color-preview blue"></div>
+            <span class="color-name">Azure</span>
+            <div class="color-check">✓</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-text">
+        <span class="footer-icon">✨</span>
+        Made for Tarnished tweeting
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
